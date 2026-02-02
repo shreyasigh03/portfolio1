@@ -3,7 +3,7 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
@@ -16,11 +16,13 @@
 }
 
 .software-skill-inline > i {
-  color: $subTitle;
+  font-size: 4rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .software-skill-inline > i:hover {
-  color: $skillsColor;
+  transform: scale(1.25);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
 }
 .software-skill-inline > p {
   color: $subTitle;

@@ -31,10 +31,6 @@
 // Keep only one definition for .greeting-main
 .greeting-main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
 }
 
 .subTitle {
@@ -44,7 +40,6 @@
 
 .greeting-main > * {
   flex: 1;
-  max-width: 600px;
   margin-bottom: 30px;
 }
 
@@ -63,9 +58,10 @@
 }
 
 .greeting-text {
-  font-size: 70px;
+  font-size: clamp(28px, 5vw, 70px);
   line-height: 1.1;
   color: $textColor !important;
+  word-break: break-word;
 }
 
 .greeting-text-p {
@@ -124,7 +120,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
   }
 

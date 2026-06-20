@@ -32,8 +32,8 @@
 .greeting-main {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -44,6 +44,7 @@
 
 .greeting-main > * {
   flex: 1;
+  max-width: 600px;
   margin-bottom: 30px;
 }
 

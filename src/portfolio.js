@@ -151,7 +151,7 @@ const workExperiences = {
       role: "Full-Stack Web Developer Intern",
       company: "InternPE",
       companylogo: null,
-      date: "Feb 2026 – Present",
+      date: "Feb 2026 – Mar 2026",
       desc: "Working as a full-stack web developer intern, contributing to real-world web applications and improving both frontend and backend functionality.",
       descBullets: [
         "Developing responsive frontend features using modern web technologies",
@@ -186,6 +186,21 @@ const bigProjects = {
   title: "Projects",
   subtitle: "Selected projects showcasing full-stack development and applied AI work",
   projects: [
+    {
+        image: null,
+       projectName: "VISITRA",
+       projectDesc: "AI-based Smart Visitor Management System featuring OTP email verification, admin approval workflows, real-time visitor monitoring, and automated notifications using Nodemailer.",
+       footerLink: [
+         {
+           name: "Live Demo",
+           url: "#"
+         },
+         {
+           name: "Source Code",
+           url: "https://github.com/shreyasigh03/visitor-management"
+         }
+       ]
+    },  
     {
       image: null,
       projectName: "OPTIVION",
@@ -249,6 +264,16 @@ const achievementSection = {
         }
       ]
     },
+    {
+      title: "Credit-Linked Data Science Program",
+      subtitle: "Masai School × IIT Guwahati — 9-month program covering Python, Data Analysis, SQL, Machine Learning, problem solving, and industry-based projects.",
+      footerLink: [
+    {
+      name: "View Certificate",
+      url: "#"
+    }
+  ]
+},
     {
       title: "Netflix Clone using HTML & CSS",
       subtitle: "LetsUpgrade — Built a Netflix UI clone using HTML and CSS.",
@@ -355,7 +380,7 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
-  display: false // Set false to hide this section, defaults to true
+  display: true // Show resume section
 };
 
 const contactInfo = {

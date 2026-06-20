@@ -32,3 +32,30 @@
     text-align: center;
   }
 }
+.swiper {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: visible;
+  cursor: grab;
+}
+
+.swiper:active {
+  cursor: grabbing;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.swiper-slide-active {
+  z-index: 10;
+  transform: scale(1.05);
+}
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  opacity: 0.15;
+}

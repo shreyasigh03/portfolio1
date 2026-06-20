@@ -10,9 +10,20 @@
 }
 
 .repo-cards-div-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.repo-cards-div-main::-webkit-scrollbar {
+  display: none;
+}
+
+.repo-cards-div-main > * {
+  min-width: 500px;
+  flex-shrink: 0;
 }
 
 /* Media Query */
@@ -26,7 +37,7 @@
     font-size: 30px;
     text-align: center;
   }
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .repo-cards-div-main > * {
+    min-width: 320px;
   }
 }
